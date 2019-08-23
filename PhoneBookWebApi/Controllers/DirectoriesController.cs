@@ -10,7 +10,7 @@ using System.Web.Http.Description;
 
 namespace PhoneBookWebApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:44358/api/Directories/", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class DirectoriesController : ApiController
     {
         private PhoneBookEntities db = new PhoneBookEntities();
